@@ -8,7 +8,7 @@
 
   <!-- Arguments for the second TurtleBot -->
   <arg name="model2" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-  <arg name="x_pos2" default="2.0"/>
+  <arg name="x_pos2" default="1.0"/>
   <arg name="y_pos2" default="0.0"/>
   <arg name="z_pos2" default="0.1"/>
   <arg name="turtlebot2" default="turtlebot2"/>
@@ -27,15 +27,38 @@
   <group ns="$(arg turtlebot1)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model1).urdf.xacro" />
     <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf1" args="-urdf -model $(arg turtlebot1) -x $(arg x_pos1) -y $(arg y_pos1) -z $(arg z_pos1) -param robot_description" />
-    <!-- Additional nodes and settings for the first TurtleBot -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+	<!-- Additional nodes and settings for the first TurtleBot -->
   </group>
 
   <!-- Group for the second TurtleBot -->
   <group ns="$(arg turtlebot2)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model2).urdf.xacro" />
     <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf2" args="-urdf -model $(arg turtlebot2) -x $(arg x_pos2) -y $(arg y_pos2) -z $(arg z_pos2) -param robot_description" />
-    <!-- Additional nodes and settings for the second TurtleBot -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+	<!-- Additional nodes and settings for the second TurtleBot -->
   </group>
+
+
+
+
+
+
+
+<include file="$(find turtlebot3_gazebo)/launch/spawn_ground.launch">
+     <arg name="robot_name" value="Ground" />
+     <arg name="x" value="0.0" />
+     <arg name="y" value="0.0" />
+     <arg name="z" value="-0.02" />
+     <arg name="roll" value="0"/>
+     <arg name="pitch" value="0"/>
+     <arg name="yaw" value="0.0" />
+     <arg name="sdf_robot_file" value="$(find turtlebot3_gazebo)/models/aws_robomaker_warehouse_GroundB_01/model.sdf" />
+</include>
+
+
 
 
 <include file="$(find turtlebot3_gazebo)/launch/spawn_Trashcan.launch">
