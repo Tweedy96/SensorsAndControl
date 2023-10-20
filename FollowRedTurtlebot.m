@@ -98,7 +98,7 @@ classdef FollowRedTurtlebot
                 rotationSpeed = -0.1 * sign(angleError); % Gives position or negative value based on direction of error
             
                 % Estimate distance based on the size of the detected red object
-                estimatedDistance = 1 / sqrt(stats(1).Area);  % We use the square root to linearize the relationship between area and distance.
+                estimatedDistance = 1 / sqrt(stats(1).Area);  % Square root to linearise the relationship between area and distance.
                         
                 % Get depth value at the target centroid
                 depthValue = depthImg(round(targetCentroid(2)), round(targetCentroid(1)));
@@ -108,7 +108,7 @@ classdef FollowRedTurtlebot
                 odomMsg = receive(self.odomSub);
                 tb1Position = [odomMsg.Pose.Pose.Position.X, odomMsg.Pose.Pose.Position.Y];
                 
-                Convert angleError to actual angle based on camera's FOV
+               % Convert angleError to actual angle based on camera's FOV
                 rgbCamFov = deg2rad(77); 
                 actualAngle = angleError * rgbCamFov / 2;
         
