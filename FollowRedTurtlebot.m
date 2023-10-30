@@ -1,7 +1,5 @@
 classdef FollowRedTurtlebot
-    %UNTITLED2 Summary of this class goes here
-    %   Detailed explanation goes here
-
+    % This class that enables a turtlebot to follow a red object
     properties
         rgbSub
         cmdPub
@@ -13,7 +11,7 @@ classdef FollowRedTurtlebot
     end
 
     methods
-
+        %Constructor that clears workspace, closes files, and then intialises a node. Afterwards, subscribes and publishes to a variety of topics
         function self = FollowRedTurtlebot()
             clc;
             close all;
