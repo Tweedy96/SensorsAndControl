@@ -29,8 +29,9 @@ The robot
 
 
 ## Code Structure
-<h2><b>FollowRedTurtlebot.m Class</b></h2>
+<h3><b>FollowRedTurtlebot.m Class</b></h3>
 The [`FollowRedTurtlebot.m`] script defines a MATLAB class that enables the robot to follow a red object (in this case, another turtlebot) using its camera. The robot processes the camera images to detect the red object, calculates its relative position and distance, and then determines the appropriate motion commands to follow the object at a given trailing distance.
+<br>
 <br>
 <b>Methods</b>
 <br>
@@ -55,7 +56,7 @@ TrackRobot:
 HoldRobot:
 - Stops the robot's motion.
 
-<h2><b>detectRed.m Script</b></h2>
+<h3><b>detectRed.m Script</b></h3>
 The [`detectRed.m`] script was the initial implementation of detecting red and then using the perceived size of the object to evaluate the trailing distance. Not used in the final implementation.
 
 
