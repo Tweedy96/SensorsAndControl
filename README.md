@@ -4,7 +4,7 @@ This project use MATLAB and ROS environment to control a turtlebot 3 waffle. By 
 
 <b> <i>Required Software: </i></b>
 - Ubuntu 18.04
-- MATLAB
+- MATLAB 2023a
 - ROS melodic
 
 <b> <i>Packages for ROS: </i></b>
@@ -32,7 +32,7 @@ The robot
 ## Code Structure
 
 ### Contribution
-Lukas Kiehl: *34*
+Lukas Kiehl: *34%*
 
 Nicholas Keltchine: *33%*
 
