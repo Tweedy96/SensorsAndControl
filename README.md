@@ -1,6 +1,6 @@
 # Turtlebot follow a Red turtlebot using RGB-D camera
 
-This project uses MATLAB and ROS environment to control a turtlebot 3 waffle. By using a RGB-D camera, the robot is capable of tracking and following a red object. For this project scope, it is used to trail a red turtlebot waffle
+This project uses MATLAB and ROS environment to control a turtlebot 3 waffle. By using a RGB-D camera, the robot is capable of tracking and following a red object. For this project scope, it is used to trail a red turtlebot waffle.
 
 <b> <i>Required Software: </i></b>
 - Ubuntu 18.04
