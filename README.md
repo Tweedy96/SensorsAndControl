@@ -29,9 +29,6 @@ Before launch, the files have to be sourced:
 
 The simulation can be launched by:
 <code>roslaunch turtlebot3_gazebo turtlebot3_warehouse.launch</code>
-<h2><b> Operation </b></h2> 
-The robot 
-
 
 ## Code Structure
 <h3><b>FollowRedTurtlebot.m Class</b></h3>
