@@ -34,6 +34,7 @@ The [`FollowRedTurtlebot.m`] script defines a MATLAB class that enables the robo
 <br>
 <b>Methods</b>
 <br>
+
 Constructor:
 - Initializes the ROS environment, sets up the ROS node, subscribers, and publishers.
 - Continuously processes the camera images to determine the robot's actions.
