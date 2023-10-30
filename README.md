@@ -33,7 +33,7 @@ The robot
 The [`FollowRedTurtlebot.m`] script defines a MATLAB class that enables the robot to follow a red object (in this case, another turtlebot) using its camera. The robot processes the camera images to detect the red object, calculates its relative position and distance, and then determines the appropriate motion commands to follow the object at a given trailing distance.
 <br>
 <br>
-<b>Methods</b>
+<b><i>Methods</b></i>
 <br>
 
 <b>Constructor:</b>
