@@ -13,6 +13,7 @@ This project use MATLAB and ROS environment to control a turtlebot 3 waffle. By 
 
 <b> <i>Packages for MATLAB: </i></b>
   - ROS Toolbox
+  - Image Processing Toolbox
 
 <i>The model used in this project is TURTLEBOT3 WAFFLE, this model have a RGB-D camera built in can can be set by: </i>
 <code> export TURTLEBOT3_MODEL=waffle </code>
