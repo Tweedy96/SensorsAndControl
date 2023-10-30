@@ -1,4 +1,4 @@
-# Turtlebot follow a square using RGB-D camera and QR code
+# Turtlebot follow a Red turtlebot using RGB-D camera
 
 This project use MATLAB and ROS environment to control a turtlebot 3 waffle. By using a RGB-D camera, the robot is capable of tracking a 
 
