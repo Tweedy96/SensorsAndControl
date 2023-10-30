@@ -58,7 +58,7 @@ The [`FollowRedTurtlebot.m`] script defines a MATLAB class that enables the robo
 - Stops the robot's motion.
 
 <h3><b>detectRed.m Script</b></h3>
-The [`detectRed.m`] script was the initial implementation of detecting red and then using the perceived size of the object to evaluate the trailing distance. Not used in the final implementation.
+The [`detectRed.m`] script was the initial implementation of detecting red and always used the perceived size of the object to evaluate the trailing distance. Not used in the final implementation.
 
 
 
