@@ -20,8 +20,8 @@ This project use MATLAB and ROS environment to control a turtlebot 3 waffle. By 
 
 ## Setup and Launching the simulation
 Replace the current, matching turtlebot3_waffle.xacro files with:
-- <code> turtlebot3_waffle_red.gazebo.xacro
-- turtlebot3_waffle_red.urdf.xacro</code>
+- <code>turtlebot3_waffle_red.gazebo.xacro</code>
+- <code>turtlebot3_waffle_red.urdf.xacro</code>
 Add the world and launch file to your gazebo world and launch file directories.
 Before launch, the files have to be sourced:
 <code>source devel/setup.bash</code>
