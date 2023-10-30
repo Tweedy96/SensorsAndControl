@@ -18,9 +18,10 @@ This project use MATLAB and ROS environment to control a turtlebot 3 waffle. By 
 <i>The model used in this project is TURTLEBOT3 WAFFLE, this model have a RGB-D camera built in can can be set by: </i>
 <code> export TURTLEBOT3_MODEL=waffle </code>
 
-<h2><b>Setup and Launching the simulation</b></h2>
-Copy the files in the turtlebot3_gazebos.zip into the path: catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo
-Before launch,the files have to be sourced:
+## Setup and Launching the simulation
+Replace the current turtlebot3_waffle.xacro files with turtlebot3_waffle_red.xacro.
+Add the world and launch file to your gazebo world and launch file directories.
+Before launch, the files have to be sourced:
 <code>source devel/setup.bash</code>
 
 The simulation can be launched by:
