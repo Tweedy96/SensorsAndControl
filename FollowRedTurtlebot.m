@@ -51,7 +51,7 @@ classdef FollowRedTurtlebot
             redThreshold = 0.99;
             otherThreshold = 0.01;
             
-            % Threshold using color information
+            % Threshold using colour information
             binaryRed = (redChannel > redThreshold) & ...
                         (greenChannel < otherThreshold) & ...
                         (blueChannel < otherThreshold);
