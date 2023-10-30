@@ -26,6 +26,8 @@ The simulation can be launched by:
 <code>roslaunch turtlebot3_gazebo turtlebot3_warehouse_withQR.launch</code>
 <h2><b> Operation </b></h2> 
 The robot 
+<h2><b>FollowRedTurtlebot.m Script</b></h2>
+The [`FollowRedTurtlebot.m`](https://github.com/Tweedy96/SensorsAndControl/blob/main/FollowRedTurtlebot.m) script defines a MATLAB class that enables the robot to follow a red object using its camera. The robot processes the camera images to detect the red object, calculates its relative position and distance, and then determines the appropriate motion commands to follow the object.
 
 
 
