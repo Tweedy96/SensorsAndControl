@@ -1,5 +1,5 @@
 classdef FollowRedTurtlebot
-    % This class that enables a turtlebot to follow a red object
+    % This class enables a turtlebot to follow a red object
     properties
         rgbSub
         cmdPub
