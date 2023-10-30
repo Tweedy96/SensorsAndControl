@@ -19,7 +19,7 @@ This project use MATLAB and ROS environment to control a turtlebot 3 waffle. By 
 <code> export TURTLEBOT3_MODEL=waffle </code>
 
 ## Setup and Launching the simulation
-Replace the current, <code>turtlebot3_waffle.gazebo.xacro </code>, <code>turtlebot3_waffle.urdf.xacro</code> files with:
+Replace the current, <code>turtlebot3_waffle.gazebo.xacro </code> and <code>turtlebot3_waffle.urdf.xacro</code> files with:
 - <code>turtlebot3_waffle_red.gazebo.xacro</code>
 - <code>turtlebot3_waffle_red.urdf.xacro</code>
 
@@ -28,7 +28,7 @@ Before launch, the files have to be sourced:
 <code>source devel/setup.bash</code>
 
 The simulation can be launched by:
-<code>roslaunch turtlebot3_gazebo turtlebot3_warehouse_withQR.launch</code>
+<code>roslaunch turtlebot3_gazebo turtlebot3_warehouse.launch</code>
 <h2><b> Operation </b></h2> 
 The robot 
 
