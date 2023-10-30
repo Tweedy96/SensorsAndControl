@@ -26,12 +26,37 @@ The simulation can be launched by:
 <code>roslaunch turtlebot3_gazebo turtlebot3_warehouse_withQR.launch</code>
 <h2><b> Operation </b></h2> 
 The robot 
-<h2><b>FollowRedTurtlebot.m Script</b></h2>
-The [`FollowRedTurtlebot.m`](https://github.com/Tweedy96/SensorsAndControl/blob/main/FollowRedTurtlebot.m) script defines a MATLAB class that enables the robot to follow a red object using its camera. The robot processes the camera images to detect the red object, calculates its relative position and distance, and then determines the appropriate motion commands to follow the object.
-
 
 
 ## Code Structure
+<h2><b>FollowRedTurtlebot.m Class</b></h2>
+The [`FollowRedTurtlebot.m`] script defines a MATLAB class that enables the robot to follow a red object (in this case, another turtlebot) using its camera. The robot processes the camera images to detect the red object, calculates its relative position and distance, and then determines the appropriate motion commands to follow the object at a given trailing distance.
+
+<b>Methods</b>
+Constructor:
+- Initializes the ROS environment, sets up the ROS node, subscribers, and publishers.
+- Continuously processes the camera images to determine the robot's actions.
+
+ProcessImage:
+- Retrieves the RGB image and extracts the red, green, and blue channels.
+- Computes the weighted centroid of the detected red regions.
+- Labels the red regions and filters out regions below a minimum area threshold.
+- Retrieves the depth image and calculates the relative angle to the detected red object.
+- Determines the robot's motion based on the detected red object's position and depth.
+
+SearchRobot:
+- If no red object is detected, the robot spins in place.
+
+TrackRobot:
+- Determines the robot's motion commands based on the estimated distance to the detected red object, the rotation speed, the angle error, and the depth value.
+
+HoldRobot:
+- Stops the robot's motion.
+
+<h2><b>detectRed.m Script</b></h2>
+The [`detectRed.m`] script was the initial implementation of detecting red and then using the perceived size of the object to evaluate the trailing distance. Not used in the final implementation.
+
+
 
 ### Contribution
 Lukas Kiehl: *34%*
