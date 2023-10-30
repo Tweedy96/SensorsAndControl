@@ -1,4 +1,4 @@
-% Initialization
+% Initialisation
 clear all
 close all
 set(0,'DefaultFigureWindowStyle','docked')
@@ -20,7 +20,7 @@ while true
     rgbMsg = receive(rgbSub);
     rgbImg = readImage(rgbMsg);
     
-    % Extract the RGB and Alpha channels from your RGBA image
+    % Extract the RGB and Alpha channels from your RGB image
     redChannel = rgbImg(:,:,1);
     greenChannel = rgbImg(:,:,2);
     blueChannel = rgbImg(:,:,3);
@@ -30,14 +30,12 @@ while true
     otherThreshold = 0.01;
  
     
-    % Threshold using both color and alpha information
+    % Threshold using both colour and alpha information
     binaryRed = (redChannel > redThreshold) & ...
                 (greenChannel < otherThreshold) & ...  % Assuming other channels are close to 0 for red
                 (blueChannel <otherThreshold);
 
-% Continue with labeling and regionprops as before...
-
-    
+% Continue with labelling and regionprops as before...
     % Label the red regions
    labeledRed = bwlabel(binaryRed);
 stats = regionprops(labeledRed, 'Area', 'Centroid');
