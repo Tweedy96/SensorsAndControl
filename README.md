@@ -36,24 +36,24 @@ The [`FollowRedTurtlebot.m`] script defines a MATLAB class that enables the robo
 <b>Methods</b>
 <br>
 
-Constructor:
+<b>Constructor:<b>
 - Initializes the ROS environment, sets up the ROS node, subscribers, and publishers.
 - Continuously processes the camera images to determine the robot's actions.
 
-ProcessImage:
+<b>ProcessImage:<b>
 - Retrieves the RGB image and extracts the red, green, and blue channels.
 - Computes the weighted centroid of the detected red regions.
 - Labels the red regions and filters out regions below a minimum area threshold.
 - Retrieves the depth image and calculates the relative angle to the detected red object.
 - Determines the robot's motion based on the detected red object's position and depth.
 
-SearchRobot:
+<b>SearchRobot:<b>
 - If no red object is detected, the robot spins in place.
 
-TrackRobot:
+<b>TrackRobot:<b>
 - Determines the robot's motion commands based on the estimated distance to the detected red object, the rotation speed, the angle error, and the depth value.
 
-HoldRobot:
+<b>HoldRobot:<b>
 - Stops the robot's motion.
 
 <h3><b>detectRed.m Script</b></h3>
@@ -61,7 +61,7 @@ The [`detectRed.m`] script was the initial implementation of detecting red and t
 
 
 
-### Contribution
+## Contribution
 Lukas Kiehl: *34%*
 
 Nicholas Keltchine: *33%*
