@@ -7,10 +7,12 @@ This project use MATLAB and ROS environment to control a turtlebot 3 waffle. By 
 - MATLAB
 - ROS melodic
 
-<b> <i>Packages: </i></b>
+<b> <i>Packages for ROS: </i></b>
   - turtlebot3_simulation -  https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-  - turtlebot3 - https://github.com/ROBOTIS-GIT/turtlebot3.git 
-  - turtlebot3_msgs - https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git 
+  - turtlebot3 - https://github.com/ROBOTIS-GIT/turtlebot3.git
+
+<b> <i>Packages for MATLAB: </i></b>
+  - ROS Toolbox
 
 <i>The model used in this project is TURTLEBOT3 WAFFLE, this model have a RGB-D camera built in can can be set by: </i>
 <code> export TURTLEBOT3_MODEL=waffle </code>
