@@ -11,7 +11,6 @@ classdef FollowRedTurtlebot
     end
 
     methods
-        %Constructor that clears workspace, closes files, and then intialises a node. Afterwards, subscribes and publishes to a variety of topics
         function self = FollowRedTurtlebot()
             clc;
             close all;
